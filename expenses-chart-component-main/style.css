@@ -1,6 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
 *{
     margin : 0;
     padding: 0;
+}
+
+:root{
+    /*cores*/
+    --cor-de-fundo: hsl(22, 66%, 92%);
+    --vermelho-claro: hsl(10, 79%, 65%);
+    --creme: hsl(27, 66%, 92%);
+
 }
 
 body{
@@ -8,4 +18,22 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    background: var(--cor-de-fundo);
+    font-family: 'DM Sans', sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 28em;    
+}
+
+.balance{
+    display: flex;
+    background: var(--vermelho-claro);
+    justify-content: space-between;
+    padding: 2em;
+    color: var(--creme);
+    border-radius: 1em;
 }
